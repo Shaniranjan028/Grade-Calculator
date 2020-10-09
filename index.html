@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Grade Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body{
+      background: url("download.jpg") no-repeat center center fixed;
+  background-image: 100% 100%;
+  background-size: cover;}
+
+ 
+    </style>
+  </head>
+  <body>
+    <div style="background-color: maroon; margin-left: 20%; margin-right: 20%">
+      <h3
+        style="
+          text-align: center;
+          color: honeydew;
+          font-weight: bold;
+          margin: 2px;
+          padding: 2px;
+        "
+      >
+        Student Grade Calculator
+      </h3>
+    </div>
+    <div style="margin-left: 10%; margin-right: 10%">
+      <div class="row mt-2" id="head">
+        <div class="col-lg-6 col-md-6 col-12 text-center" style="height: 500px; padding: 20px; background-color: black; opacity: 0.8;border-radius: 20px;">
+          <div style="padding-bottom: 3px; padding-top: 3px">
+            <input
+              type="text"
+              placeholder="Mathematics"
+              id="mth"
+              style="
+                width: 60%;
+                padding: 0.5rem;
+                border-radius: 40px;
+                font-style: italic;
+              "
+            />
+          </div>
+          <div style="padding-bottom: 3px; padding-top: 3px">
+            <input
+              type="text"
+              placeholder="Physics"
+              id="phy"
+              style="
+                width: 60%;
+                padding: 0.5rem;
+                border-radius: 40px;
+                font-style: italic;
+              "
+            />
+          </div>
+          <div style="padding-bottom: 3px; padding-top: 3px">
+            <input
+              type="text"
+              placeholder="Chemistry"
+              id="chem"
+              style="
+                width: 60%;
+                padding: 0.5rem;
+                border-radius: 40px;
+                font-style: italic;
+              "
+            />
+          </div>
+          <div style="padding-bottom: 3px; padding-top: 3px">
+            <input
+              type="text"
+              placeholder="Electronics"
+              id="elec"
+              style="
+                width: 60%;
+                padding: 0.5rem;
+                border-radius: 40px;
+                font-style: italic;
+              "
+            />
+          </div>
+          <div style="padding-bottom: 3px; padding-top: 3px">
+            <input
+              type="text"
+              placeholder="Communication"
+              id="ct"
+              style="
+                width: 60%;
+                padding: 0.5rem;
+                border-radius: 40px;
+                font-style: italic;
+              "
+            />
+          </div>
+<div class="pt-5 mt-5 pr-4">
+          <button class="btn btn-success" onclick="Total()">Total</button>
+          <button class="btn btn-success"  onclick="Average()">Average</button>
+          <button class="btn btn-success"  onclick="Grade()">Grade</button>
+</div>
+        </div>
+          <div class="col-lg-6 col-md-6 col-12 text-center result"  style="height: 500px; padding: 20px;  background-color: black; opacity: 0.8;border-radius: 20px;">
+            <div id="opt1"><h2 style="color: white; padding-right: 7%;">Total</h2></div>
+            <div style="height: 180px;color: white;text-align: left; margin-left: 40% !important; font-family: sans-serif;" id="total"> </div>
+            <div id="opt2"><h2 style="color: white;padding-left: 2%;">Average</h2></div>
+            <div style="height: 40px;color: white; text-align: left; margin-left: 40% !important; font-family: sans-serif;" id="avg"></div>
+            <div id="opt1"><h2 style="color: white; padding-right: 7%;">Grade</h2></div>
+            <div style="height: 40px; color: white;text-align: left;  margin-left: 40% !important; font-family: sans-serif;" id="grd"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
